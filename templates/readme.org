@@ -1,0 +1,13 @@
+$project_name (project $project_id)
+Created by $creator on $init_date_time
+
+What is this project about?
+=============================
+
+
+Who is involved?
+=============================
+
+
+How are the files organized?
+=============================

@@ -1,0 +1,12 @@
+$project_name (project $project_id)
+Created by $creator on $init_date_time
+
+This file should be used to monitor the status of the project.
+Recommended updates include things like submission of proposal,
+reviews, official start dates, milestones, and so on.
+
+
+| Status  | Date            | Note                |
+|---------+-----------------+---------------------|
+| CREATED | $init_date_time | New project created |
+|         |                 |                     |
