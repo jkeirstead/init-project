@@ -14,7 +14,7 @@ project.  I was originally going to do all of this with databases but
 now I'll just do it with org-mode files."""
 
 projects_home = 'd:/jkeirste/projects/'
-templates_dir = 'd:/jkeirste/code/scripts/templates/'
+script_dir = 'd:/jkeirste/code/scripts/init-project/'
 creator_name = 'James Keirstead'
 
 def init_project(project_id, name):
@@ -31,8 +31,10 @@ def init_project(project_id, name):
     os.mkdir(project_path)
 
     # Define the template files
-    status_template = templates_dir + 'status.org'
-    readme_template = templates_dir + 'readme.org'
+    status_template = os.path.join(os.path.abspath(script_dir), 
+                                   'templates','status.org')
+    readme_template = os.path.join(os.path.abspath(script_dir), 
+                                   'templates','readme.org')
     
     # Specify the details
     namespace = {}
