@@ -30,7 +30,7 @@ def init_project(project_id, name):
     os.mkdir(project_path)
 
     # Define the template files
-    status_template = templates_dir + 'project-status.org'
+    status_template = templates_dir + 'status.org'
     readme_template = templates_dir + 'readme.org'
     
     # Specify the details
@@ -43,7 +43,7 @@ def init_project(project_id, name):
     readme_t = cheetah.Template(file=readme_template, searchList=namespace)
     
     # Write the project status template
-    status_path = os.path.join(project_path, 'project-status.org')
+    status_path = os.path.join(project_path, 'status.org')
     status_file = open(status_path, 'w')
     status_file.write(str(status_t))
     status_file.close()
