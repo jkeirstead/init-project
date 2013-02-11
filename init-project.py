@@ -2,6 +2,7 @@
 import os
 import Cheetah.Template as cheetah
 import time
+import sys
 
 # Initializes a new project
 # James Keirstead
@@ -59,10 +60,12 @@ def init_project(project_id, name):
     
 if __name__=='__main__':
     # Read in the arguments
-    last_project_id = 55
-    project_name = 'new project'
-
-    init_project(last_project_id + 1, project_name)
+    if len(sys.argv)==3:
+        project_id = sys.argv[1]
+        project_name = sys.argv[2]
+        init_project(project_id, project_name)
+    else:
+        print "Two arguments must be provided"
 
 
     
